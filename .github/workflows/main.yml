@@ -18,7 +18,7 @@ jobs:
     steps:
       - name: Set Version
         id: dyx 
-        run: git checkout V1.6.2
+        run: git checkout 1.6.2
       - name: Set branch name
         id: vars
         run: echo "BRANCH_NAME=${{ github.repository_owner == 'Guovin' && 'gd' || 'master' }}" >> $GITHUB_ENV
